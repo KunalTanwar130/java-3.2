@@ -1,0 +1,10 @@
+CREATE DATABASE bankdb;
+USE bankdb;
+
+CREATE TABLE account (
+    acc_no INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    balance DOUBLE
+);
+
+INSERT INTO account(name, balance) VALUES ('Kunal', 10000), ('Ravi', 8000);
